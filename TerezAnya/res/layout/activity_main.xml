@@ -1,0 +1,174 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:background="@color/lightgreen"
+        android:text="Teréz Anya"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+        <EditText
+            android:id="@+id/searchField"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:background="@drawable/round_lightgreenstroke"
+            android:gravity="center"
+            android:lines="2"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/clearSearchFieldId"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/left_arrow_button_hi"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="125dp"
+            android:layout_weight="1"
+            android:src="@drawable/benedek_bg" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="125dp"
+            android:layout_weight="1"
+            android:src="@drawable/terezanya" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/randomButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/buttonlightgreen"
+                android:gravity="center"
+                android:onClick="randomText"
+                android:padding="15dp"
+                android:text="@string/randomButtonText"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/searchButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/buttonlightgreen"
+                android:gravity="center"
+                android:onClick="startSearch"
+                android:padding="15dp"
+                android:text="@string/searchButtonText"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:background="@color/lightgreen"
+        android:text="Input:"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/inputField"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.14"
+        android:background="@drawable/round_lightgreenstroke"
+        android:gravity="center"
+        android:inputType="textMultiLine"
+        android:padding="2dp"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:background="@color/lightgreen"
+        android:text="Output:"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/resultField"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.50"
+        android:background="@drawable/round_lightgreenstroke"
+        android:gravity="center"
+        android:inputType="textMultiLine"
+        android:padding="2dp"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/writeAllButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="80dp"
+            android:background="@drawable/buttonlightgreen"
+            android:gravity="center"
+            android:onClick="showAll"
+            android:padding="15dp"
+            android:text="Minden"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/clearAllButtonId"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:background="@drawable/delete_all_green_button"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>
