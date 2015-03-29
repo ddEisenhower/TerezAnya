@@ -69,10 +69,9 @@ public class MainActivity extends Activity {
 			   prevSearchText = "";						
 		});*/
 
-		
-		
 		//with lambda
 		//clearAllButton.setOnClickListener((View v) -> {    // do something here //});
+		//change
 		
 		EditText searchField = (EditText)findViewById(R.id.searchField);
 		searchField.setOnFocusChangeListener(new View.OnFocusChangeListener() {
