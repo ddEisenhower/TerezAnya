@@ -58,7 +58,7 @@ public class MainActivity extends Activity {
 			   prevSearchText = "";
 		    }
 		});	
-		/*
+		/* Java 1.8 is not working
 		clearAllButton.setOnClickListener((View v) -> {
 		 	   TextView resultField = (TextView)findViewById(R.id.resultField);
 			   resultField.setText("");
@@ -153,7 +153,7 @@ public class MainActivity extends Activity {
 			   TextView inputField = (TextView)findViewById(R.id.inputField);
 			   inputField.setText("");			   
 			   TextView resultField = (TextView)findViewById(R.id.resultField);
-			   resultField.setText("SZARUL KEREST…L VAGY V…GE A DALNAK, IGY¡L EGYET!!!");
+			   resultField.setText("SZARUL KEREST√âL VAGY V√âGE A DALNAK, IGY√ÅL EGYET!!!");
 		   }
 	   }
 	   InputMethodManager mgr = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
